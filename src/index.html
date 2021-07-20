@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
@@ -28,7 +32,7 @@
               aria-label="Start navigating inside the webpage"
               tabindex="0"
             >
-              <span>Press to Venture</span>
+              <span class="preloader__description">Press to Venture</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="preloader__arrow"
@@ -67,14 +71,20 @@
         </div>
       </div>
       <div id="js-website-content" class="content-container">
-        <section class="view view--black"></section>
+        <section class="view view--white"></section>
         <section class="view view--white">
           <div class="list-wrapper">
-            <div>
-              <h2 class="list-wrapper__title">Travel anywhere</h2>
-            </div>
             <ul class="card-list">
-              <li class="card" tabindex="1">
+              <div class="list-wrapper__title-wrapper">
+                <h2 class="list-wrapper__title">Travel anywhere</h2>
+              </div>
+              <li
+                class="card"
+                tabindex="1"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="0"
+              >
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img
@@ -86,7 +96,13 @@
                   <span class="card__description">Guanacaste</span>
                 </a>
               </li>
-              <li class="card" tabindex="2">
+              <li
+                class="card"
+                tabindex="2"
+                data-aos="zoom-in"
+                data-aos-duration="1300"
+                data-aos-delay="200"
+              >
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img src="./img/cr-sanjose.jpg" alt="" class="card__img" />
@@ -94,7 +110,13 @@
                   <span class="card__description">San José</span>
                 </a>
               </li>
-              <li class="card" tabindex="3">
+              <li
+                class="card"
+                tabindex="3"
+                data-aos="zoom-in"
+                data-aos-duration="1600"
+                data-aos-delay="400"
+              >
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img
@@ -106,7 +128,13 @@
                   <span class="card__description">Puntarenas</span>
                 </a>
               </li>
-              <li class="card" tabindex="4">
+              <li
+                class="card"
+                tabindex="4"
+                data-aos="zoom-in"
+                data-aos-duration="1900"
+                data-aos-delay="600"
+              >
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img src="./img/cr-heredia.jpg" alt="" class="card__img" />
@@ -114,7 +142,7 @@
                   <span class="card__description">Heredia</span>
                 </a>
               </li>
-              <li class="card" tabindex="5">
+              <!-- <li class="card" tabindex="5" data-aos="zoom-in">
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img src="./img/cr-limon.jpg" alt="" class="card__img" />
@@ -122,7 +150,7 @@
                   <span class="card__description">Limón</span>
                 </a>
               </li>
-              <li class="card" tabindex="6">
+              <li class="card" tabindex="6" data-aos="zoom-in">
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img src="./img/cr-cartago.jpg" alt="" class="card__img" />
@@ -130,14 +158,14 @@
                   <span class="card__description">Cartago</span>
                 </a>
               </li>
-              <li class="card" tabindex="7">
+              <li class="card" tabindex="7" data-aos="zoom-in">
                 <a href="" class="card__link" tabindex="-1">
                   <div class="card__img-wrapper">
                     <img src="./img/cr-alajuela.jpg" alt="" class="card__img" />
                   </div>
                   <span class="card__description">Alajuela</span>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </section>

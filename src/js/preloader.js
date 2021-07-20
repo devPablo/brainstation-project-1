@@ -3,9 +3,9 @@ import ambienceSound from './../audio/ambience.mp3';
 document.addEventListener('DOMContentLoaded', e => {
   const websiteContent = document.getElementById('js-website-content');
   const jsPreloader = document.getElementById('js-preloader');
-  
-  // websiteContent.style.display = 'none';
-  jsPreloader.style.display = 'none';
+
+  websiteContent.style.display = 'none';
+  // jsPreloader.style.display = 'none';
 
   document.getElementById('js-launch-website').addEventListener('click', e => {
     launchWebsitePreloader();
