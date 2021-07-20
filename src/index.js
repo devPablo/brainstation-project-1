@@ -1,18 +1,8 @@
 import './styles/main.scss';
-import ambienceSound from './audio/ambience.mp3';
+import './js/preloader';
+import AOS from 'aos';
+import 'aos/src/sass/aos.scss';
 
-document.addEventListener('DOMContentLoaded', e => {
-  document.getElementById('js-launch-website').addEventListener('click', e => {
-    launchWebsitePreloader();
-  });
+AOS.init({
+  once: true,
 });
-
-const launchWebsitePreloader = () => {
-  document.querySelector('#js-preloader').style.top = '-100vh';
-  let audio = new Audio(ambienceSound);
-  setTimeout(e => {
-    audio.play();
-    audio.volume = 0.35;
-    audio.loop = true;
-  }, 850);
-};

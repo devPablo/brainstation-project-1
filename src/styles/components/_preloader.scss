@@ -1,3 +1,5 @@
+@use './../abstracts/breakpoints' as media;
+
 .preloader {
   background-color: #101010;
   width: 100%;
@@ -11,7 +13,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem;
+  padding: 0.3rem;
+  font-family: $secondary-font;
 
   &__wrapper {
     display: flex;
@@ -22,10 +25,23 @@
 
   &__title {
     text-align: center;
-    color: $preloader-primary;
-    font-size: 4rem;
+    color: $primary-preloader;
+    font-size: 3rem;
     width: 100%;
     font-weight: 700;
+    font-family: $secondary-font;
+
+    @include media.query('>=xsm') {
+      font-size: 3.8rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 5rem;
+    }
+
+    @include media.query('>=md') {
+      font-size: 6rem;
+    }
   }
 
   &__enter-wrapper {
@@ -36,16 +52,22 @@
     width: 100%;
   }
 
+  &__description {
+    font-family: $secondary-font;
+    font-weight: 300;
+    color: $secondary-preloader;
+  }
+
   &__arrow {
     width: 30px;
     height: 30px;
     position: relative;
     right: 0;
-    transition: right .1s ease-in-out;
+    transition: right 0.15s ease-in-out;
   }
 
   &__arrow path {
-    stroke: $preloader-primary;
+    stroke: $secondary-preloader;
   }
 
   &__enter:hover &__arrow {
@@ -54,7 +76,7 @@
 
   &__enter {
     outline: 0;
-    color: $preloader-primary;
+    color: $primary-preloader;
     font-weight: 300;
     letter-spacing: 0.1rem;
     font-size: 1rem;
@@ -62,17 +84,26 @@
     background-color: transparent;
     border: none;
     width: 100%;
-    margin: 2rem;
-    padding: 0.2rem;
+    margin: 1rem;
+    padding: 0.5rem;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     border: 1.5px solid transparent;
+    cursor: pointer;
 
     &:focus {
-      border: 1.5px solid $focus-primary;
+      border: 1.5px solid $secondary-focus;
+    }
+
+    @include media.query('>=xsm') {
+      font-size: 1.15rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 1.25rem;
     }
   }
 }
