@@ -1,3 +1,5 @@
+@use './../abstracts/breakpoints' as media;
+
 .preloader {
   background-color: #101010;
   width: 100%;
@@ -11,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 3rem;
+  padding: 0.3rem;
 
   &__wrapper {
     display: flex;
@@ -23,9 +25,21 @@
   &__title {
     text-align: center;
     color: $preloader-primary;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
     font-weight: 700;
+
+    @include media.query('>=xsm') {
+      font-size: 3.8rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 5rem;
+    }
+
+    @include media.query('>=md') {
+      font-size: 6rem;
+    }
   }
 
   &__enter-wrapper {
@@ -41,7 +55,7 @@
     height: 30px;
     position: relative;
     right: 0;
-    transition: right .1s ease-in-out;
+    transition: right 0.15s ease-in-out;
   }
 
   &__arrow path {
@@ -62,17 +76,26 @@
     background-color: transparent;
     border: none;
     width: 100%;
-    margin: 2rem;
-    padding: 0.2rem;
+    margin: 1rem;
+    padding: 0.5rem;
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     border: 1.5px solid transparent;
+    cursor: pointer;
 
     &:focus {
       border: 1.5px solid $focus-primary;
+    }
+
+    @include media.query('>=xsm') {
+      font-size: 1.15rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 1.25rem;
     }
   }
 }
