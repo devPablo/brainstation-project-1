@@ -1,0 +1,52 @@
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.list-wrapper {
+  margin: 0.5rem;
+
+  &__title {
+    border: 2.5px solid transparent;
+    margin-top: 3rem;
+  }
+}
+
+.card {
+  margin: 1rem 0;
+  list-style: none;
+  border: 2.5px solid transparent;
+  transition: border 0.2s ease-in-out;
+
+  &:focus {
+    outline: 0;
+    border: 2.5px solid $focus-primary;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &__img-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 275px;
+    height: 275px;
+    margin-bottom: 0.5rem;
+  }
+
+  &:hover &__img {
+    transform: scale(1.15);
+  }
+
+  &__description {
+    color: rgb(34, 34, 34);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

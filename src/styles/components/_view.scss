@@ -1,0 +1,13 @@
+.view {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &--white {
+    background-color: #FFF;
+  }
+
+  &--black {
+    background-color: #000;
+  }
+}
