@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Fraunces', serif;
+}
+
+html, body {
+  font-size: $root-font-size;
+  margin: 0;
+}
+
+P {
+  margin: 0;
+}

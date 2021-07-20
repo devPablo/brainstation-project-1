@@ -1,0 +1,49 @@
+@use "../abstracts/breakpoints" as media;
+
+.heading {
+  font-size: 16px;
+
+  &::after {
+    content: " mobile";
+  }
+
+  @include media.query(">=sm") {
+    font-size: 52px;
+
+    &::after {
+      content: " tablet portrait";
+    }
+  }
+
+  @include media.query(">1000px", "<1005px") {
+    font-size: rem(100px);
+
+    &::after {
+      content: " the 1000";
+    }
+  }
+
+  @include media.query(">=md") {
+    font-size: 72px;
+
+    &::after {
+      content: " tablet landscape";
+    }
+  }
+
+  @include media.query(">=lg") {
+    font-size: 82px;
+
+    &::after {
+      content: " desktop";
+    }
+  }
+
+  @include media.query(">=xl") {
+    font-size: 92px;
+
+    &::after {
+      content: " large desktop";
+    }
+  }
+}
