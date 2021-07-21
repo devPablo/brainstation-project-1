@@ -46,7 +46,15 @@
     transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 
     &--active {
-      color: #000;
+      color: rgb(71, 71, 71);
+
+      &:hover {
+        color: #000 !important;
+      }
+
+      &::after {
+        background-color: #000 !important;
+      }
     }
 
     &:focus {
@@ -112,7 +120,11 @@
     transition: fill 0.3s ease-in-out;
 
     &--active {
-      fill: #000;
+      fill: rgb(71, 71, 71);
+
+      &:hover {
+        fill: #000 !important;
+      }
     }
 
     &:hover {
