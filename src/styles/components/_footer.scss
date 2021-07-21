@@ -63,13 +63,13 @@
 
   &__list-title {
     font-size: 1.2rem;
-    color: #101010;
+    color: #000;
     font-weight: 700;
   }
 
   &__list-link {
     font-size: 1rem;
-    color: #818181;
+    color: #000;
   }
 
   &__form {
@@ -86,14 +86,14 @@
 
   &__form-label {
     font-size: 0.9rem;
-    color: #757d94;
+    color: #53565f;
   }
 
   &__form-input {
     background-color: #f1f5f9;
     border: 0;
     padding: 0.8rem;
-    color: #757d94;
+    color: #53565f;
     border-radius: 3px;
     outline: 2px solid transparent;
     transition: outline 0.3s ease-in-out;
