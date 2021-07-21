@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,41 @@
     <title>Costa Rica</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__link-wrapper">
+          <a href="" tabindex="1">
+            <svg
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+              class="nav__menu-icon"
+            >
+              <path
+                d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li>
+            <a
+              href="#link-travel"
+              class="nav__link nav__link--spacing"
+              tabindex="2"
+              >Travel</a
+            >
+          </li>
+          <li>
+            <a
+              href="#link-learn"
+              class="nav__link nav__link--spacing"
+              tabindex="3"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <div id="js-preloader" class="preloader">
@@ -71,8 +106,26 @@
         </div>
       </div>
       <div id="js-website-content" class="content-container">
-        <section class="view view--white"></section>
-        <section class="view view--white">
+        <section class="view view--white view__wrapper-video">
+          <div class="intro">
+            <div class="intro__wrapper">
+              <h1 class="intro__title">
+                Not a country, <br />
+                <span id="js-intro-title" class="intro__subtitle"
+                  >An adventure</span
+                >
+              </h1>
+            </div>
+          </div>
+          <video
+            class="view__video"
+            src="./video/cr-video-header.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </section>
+        <section id="link-travel" class="view--white">
           <div class="list-wrapper">
             <ul class="card-list">
               <div class="list-wrapper__title-wrapper">
@@ -80,7 +133,7 @@
               </div>
               <li
                 class="card"
-                tabindex="1"
+                tabindex="4"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="0"
@@ -98,7 +151,7 @@
               </li>
               <li
                 class="card"
-                tabindex="2"
+                tabindex="5"
                 data-aos="zoom-in"
                 data-aos-duration="1300"
                 data-aos-delay="200"
@@ -112,7 +165,7 @@
               </li>
               <li
                 class="card"
-                tabindex="3"
+                tabindex="6"
                 data-aos="zoom-in"
                 data-aos-duration="1600"
                 data-aos-delay="400"
@@ -130,7 +183,7 @@
               </li>
               <li
                 class="card"
-                tabindex="4"
+                tabindex="7"
                 data-aos="zoom-in"
                 data-aos-duration="1900"
                 data-aos-delay="600"
@@ -142,34 +195,12 @@
                   <span class="card__description">Heredia</span>
                 </a>
               </li>
-              <!-- <li class="card" tabindex="5" data-aos="zoom-in">
-                <a href="" class="card__link" tabindex="-1">
-                  <div class="card__img-wrapper">
-                    <img src="./img/cr-limon.jpg" alt="" class="card__img" />
-                  </div>
-                  <span class="card__description">Limón</span>
-                </a>
-              </li>
-              <li class="card" tabindex="6" data-aos="zoom-in">
-                <a href="" class="card__link" tabindex="-1">
-                  <div class="card__img-wrapper">
-                    <img src="./img/cr-cartago.jpg" alt="" class="card__img" />
-                  </div>
-                  <span class="card__description">Cartago</span>
-                </a>
-              </li>
-              <li class="card" tabindex="7" data-aos="zoom-in">
-                <a href="" class="card__link" tabindex="-1">
-                  <div class="card__img-wrapper">
-                    <img src="./img/cr-alajuela.jpg" alt="" class="card__img" />
-                  </div>
-                  <span class="card__description">Alajuela</span>
-                </a>
-              </li> -->
             </ul>
           </div>
         </section>
-        <section class="view view--white"></section>
+        <section class="view--black">
+          <h2>Something</h2>
+        </section>
       </div>
     </main>
 

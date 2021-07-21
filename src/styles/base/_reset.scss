@@ -10,6 +10,7 @@
 html, body {
   font-size: $root-font-size;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 p {
