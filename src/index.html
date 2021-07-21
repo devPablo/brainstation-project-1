@@ -19,8 +19,69 @@
   </head>
   <body>
     <header id="js-header" class="header">
+      <nav id="js-slider-menu" class="slider-menu">
+        <button type="button" id="js-close-menu" class="slider-menu__icon-wrapper button-icon">
+          <svg
+            class="slider-menu__icon"
+            viewBox="0 0 512.001 512.001"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857 5.119 0 10.237-1.952 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"
+              fill="#FFF"
+            ></path>
+          </svg>
+        </button>
+        <ul class="slider-menu__list">
+          <li class="slider-menu__list-item">
+            <a
+              href="https://www.agoda.com/"
+              target="_blank"
+              class="slider-menu__list-link"
+              tabindex="7"
+              >Find homes</a
+            >
+          </li>
+          <li class="slider-menu__list-item">
+            <a
+              href="https://www.booking.com/"
+              target="_blank"
+              class="slider-menu__list-link"
+              tabindex="8"
+              >Book a place</a
+            >
+          </li>
+          <li class="slider-menu__list-item">
+            <a
+              href="https://www.hoteles.com/"
+              target="_blank"
+              class="slider-menu__list-link"
+              tabindex="9"
+              >Stay in a hotel</a
+            >
+          </li>
+          <li class="slider-menu__list-item">
+            <a
+              href="https://expedia.com/"
+              target="_blank"
+              class="slider-menu__list-link"
+              tabindex="10"
+              >Find a flight</a
+            >
+          </li>
+          <li class="slider-menu__list-item">
+            <a
+              href="https://www.kayak.com/"
+              target="_blank"
+              class="slider-menu__list-link"
+              tabindex="11"
+              >Rent a car</a
+            >
+          </li>
+        </ul>
+      </nav>
       <nav class="nav">
-        <div class="nav__link-wrapper" tabindex="1">
+        <button type="button" id="js-open-menu" class="nav__link-wrapper button-icon" tabindex="1">
           <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +91,7 @@
               d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
             ></path>
           </svg>
-        </div>
+        </button>
         <ul class="nav__list">
           <li>
             <a
@@ -44,7 +105,7 @@
             <a
               href="#link-museum"
               class="nav__link nav__link--spacing"
-              tabindex="2"
+              tabindex="3"
               >Museums</a
             >
           </li>
@@ -52,7 +113,7 @@
             <a
               href="#link-contact"
               class="nav__link nav__link--spacing"
-              tabindex="3"
+              tabindex="4"
               >Contact</a
             >
           </li>
@@ -147,7 +208,6 @@
                   href="https://www.google.com/maps/place/Guanacaste+Province/@10.4691461,-85.9155352,9z/data=!3m1!4b1!4m5!3m4!1s0x8f757d2a8a1c08e5:0xe1081082012af945!8m2!3d10.6267399!4d-85.4436706"
                   target="_blank"
                   class="card__link"
-                  tabindex="4"
                 >
                   <div class="card__img-wrapper">
                     <img
@@ -168,7 +228,6 @@
                 <a
                   href="https://www.google.com/maps/place/San+Jos%C3%A9+Province,+San+Jos%C3%A9/@9.9355438,-84.1483645,13z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e342c50d15c5:0xe6746a6a9f11b882!8m2!3d9.9280694!4d-84.0907246"
                   class="card__link"
-                  tabindex="5"
                 >
                   <div class="card__img-wrapper">
                     <img src="./img/cr-sanjose.jpg" alt="" class="card__img" />
@@ -185,7 +244,6 @@
                 <a
                   href="https://www.google.com/maps/place/Puntarenas+Province,+Punta+Arenas/@9.9785506,-84.8309757,15z/data=!3m1!4b1!4m5!3m4!1s0x8fa02eb96dada6b7:0x3f48bd110f83d5ec!8m2!3d9.9778439!4d-84.8294211"
                   class="card__link"
-                  tabindex="6"
                 >
                   <div class="card__img-wrapper">
                     <img
@@ -206,7 +264,6 @@
                 <a
                   href="https://www.google.com/maps/place/Alajuela+Province,+Alajuela/@10.0274898,-84.2224415,14z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c871fbddb3:0xb1f90fbc26bf36cb!8m2!3d10.0159394!4d-84.2141701"
                   class="card__link"
-                  tabindex="7"
                 >
                   <div class="card__img-wrapper">
                     <img src="./img/cr-alajuela.jpg" alt="" class="card__img" />
@@ -323,7 +380,6 @@
               <a
                 class="contact__submit"
                 href="mailto:contact@costarica.com"
-                tabindex="8"
               >
                 Let's begin
               </a>

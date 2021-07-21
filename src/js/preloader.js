@@ -18,7 +18,9 @@ const launchWebsitePreloader = () => {
   const jsPreloader = document.getElementById('js-preloader');
   const websiteContent = document.getElementById('js-website-content');
   const jsHeader = document.getElementById('js-header');
-
+  const jsOpenMenu = document.getElementById('js-open-menu');
+  
+  jsOpenMenu.focus();
   jsPreloader.style.top = '-100vh';
   let audio = new Audio(ambienceSound);
   setTimeout(e => {
