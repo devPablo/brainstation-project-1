@@ -1,0 +1,59 @@
+@use './../abstracts/breakpoints' as media;
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 200;
+
+  &__wrapper {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: $secondary-font;
+    font-weight: 400;
+
+    @include media.query('>=xsm') {
+      font-size: 2.2rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 2.6rem;
+    }
+
+    @include media.query('>=lg') {
+      font-size: 3rem;
+    }
+
+    @include media.query('>=xl') {
+      font-size: 3.4rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    @include media.query('>=xsm') {
+      font-size: 2.6rem;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 3rem;
+    }
+
+    @include media.query('>=lg') {
+      font-size: 3.4rem;
+    }
+
+    @include media.query('>=xl') {
+      font-size: 3.8rem;
+    }
+  }
+}
