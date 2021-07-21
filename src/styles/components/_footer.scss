@@ -1,0 +1,116 @@
+@use './../abstracts/breakpoints' as media;
+
+.footer {
+  margin-top: 10rem;
+
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper-info {
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include media.query('>=xsm') {
+      flex-direction: row;
+    }
+
+    @include media.query('>=md') {
+      margin: 0 8rem;
+    }
+  }
+
+  &__wrapper-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__col {
+    margin: 0.5rem 0;
+    align-items: flex-start;
+
+    @include media.query('>=xsm') {
+      flex-grow: 1;
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    list-style: none;
+    margin: 0.6rem 0;
+  }
+
+  &__list-title {
+    font-size: 1.2rem;
+    color: #101010;
+    font-weight: 700;
+  }
+
+  &__list-link {
+    font-size: 1rem;
+    color: #818181;
+  }
+
+  &__form {
+    max-width: 80%;
+
+    @include media.query('>=md') {
+      max-width: 60%;
+    }
+    
+  }
+
+  &__form-group {
+    margin: 0.8rem 0;
+  }
+
+  &__form-label {
+    font-size: 0.9rem;
+    color: #757d94;
+  }
+
+  &__form-input {
+    background-color: #f1f5f9;
+    border: 0;
+    padding: 0.8rem;
+    color: #757d94;
+    border-radius: 3px;
+    outline: 2px solid transparent;
+    transition: outline 0.3s ease-in-out;
+    width: 100%;
+
+    &:focus {
+      outline: 2px solid $secondary-focus;
+    }
+  }
+
+  &__form-submit {
+    background-color: #2962ff;
+    border: none;
+    outline: 2px solid transparent;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    padding: 14px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:focus {
+      outline: 2px solid $primary-focus;
+    }
+
+    &:hover {
+      top: -3px;
+      box-shadow: rgb(80 80 80 / 15%) 0px 5px 15px;
+      background-color: #1c44b2;
+    }
+  }
+}
