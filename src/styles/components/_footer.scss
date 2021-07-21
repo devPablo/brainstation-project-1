@@ -33,6 +33,21 @@
     margin: 0.5rem 0;
     align-items: flex-start;
 
+    &--icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+
+      @include media.query('>=sm') {
+        margin: 0.3rem;
+      }
+
+      @include media.query('>=md') {
+        margin: 0.6rem;
+      }
+    }
+
     @include media.query('>=xsm') {
       flex-grow: 1;
     }
@@ -63,7 +78,6 @@
     @include media.query('>=md') {
       max-width: 60%;
     }
-    
   }
 
   &__form-group {
@@ -104,13 +118,54 @@
     cursor: pointer;
 
     &:focus {
-      outline: 2px solid $primary-focus;
+      outline: 2px solid #101010;
     }
 
     &:hover {
       top: -3px;
       box-shadow: rgb(80 80 80 / 15%) 0px 5px 15px;
       background-color: #1c44b2;
+    }
+  }
+
+  &__icon-wrapper {
+    border: 1.5px solid #101010;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 0 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #101010;
+    }
+
+    @include media.query('>=md') {
+      margin: 0 4rem;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: #101010;
+    padding: 0.4rem;
+    transition: fill 0.2s ease-in-out;
+
+    &:hover {
+      fill: #fff;
+    }
+
+    @include media.query('>=xsm') {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include media.query('>=sm') {
+      width: 38px;
+      height: 38px;
     }
   }
 }
