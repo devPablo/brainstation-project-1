@@ -23,7 +23,6 @@
   margin: 1rem 0;
   list-style: none;
   border: 2.5px solid transparent;
-  transition: border 0.2s ease-in-out;
   flex-grow: 1;
 
   @include media.query('>=sm') {
@@ -32,13 +31,14 @@
     align-items: center;
   }
 
-  &:focus {
-    outline: 0;
-    border: 2.5px solid $primary-focus;
-  }
-
   &__link {
     width: 100%;
+    outline: 2.5px solid transparent;
+    transition: outline 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2.5px solid $secondary-focus;
+    }
   }
 
   &__img {

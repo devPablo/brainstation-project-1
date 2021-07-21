@@ -16,12 +16,50 @@
     list-style: none;
   }
 
+  &__link-wrapper {
+    outline: 2.5px solid transparent;
+    transition: outline 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2.5px solid $primary-focus;
+    }
+  }
+
   &__link {
     font-size: 0.7rem;
-    color: #fff;
+    color: rgb(238, 238, 238);
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-weight: 700;
+    position: relative;
+    padding-bottom: 0.2rem;
+    outline: 2.5px solid transparent;
+    transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2.5px solid $primary-focus;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
 
     @include media.query('>=sm') {
       font-size: 0.9rem;
@@ -51,7 +89,14 @@
   &__menu-icon {
     width: 18px;
     height: 18px;
-    fill: #fff;
+    fill: rgb(238, 238, 238);
+    cursor: pointer;
+    outline: 2.5px solid transparent;
+    transition: fill 0.3s ease-in-out;
+
+    &:hover {
+      fill: #fff;
+    }
 
     @include media.query('>=sm') {
       width: 24px;
