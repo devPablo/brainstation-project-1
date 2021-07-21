@@ -1,0 +1,75 @@
+@use './../abstracts/breakpoints' as media;
+
+.contact {
+  width: 100%;
+  height: 400px;
+  background-image: url(./../../img/cr-forest.webp);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  background-position-y: 87.5%;
+  border-radius: 14px;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    z-index: 600;
+    text-align: center;
+    font-weight: 700;
+
+    @include media.query('>=sm') {
+      font-size: 1rem;
+      padding: 0.7rem 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: #222222;
+
+    @include media.query('>=sm') {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__submit {
+    margin: 1rem 0;
+    padding: 0.4rem 2.5rem;
+    color: #fff;
+    background-color: #222222;
+    outline: 2.5px solid transparent;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    transition: border 0.2s ease-in-out, all 0.3s ease-in-out;
+    border: 2.5px solid transparent;
+    font-size: 0.8rem;
+
+    &:hover {
+      color: #222222;
+      background-color: transparent;
+      border: 2.5px solid #222222;
+      font-weight: 700;
+    }
+
+    &:focus {
+      outline: 2.5px solid $secondary-focus;
+    }
+
+    @include media.query('>=sm') {
+      font-size: 0.9rem;
+    }
+
+    @include media.query('>=md') {
+      font-size: 1rem;
+      padding: 0.6rem 2.7rem;
+    }
+  }
+}
