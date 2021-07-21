@@ -20,7 +20,13 @@
   <body>
     <header id="js-header" class="header">
       <nav id="js-slider-menu" class="slider-menu">
-        <button type="button" id="js-close-menu" class="slider-menu__icon-wrapper button-icon">
+        <button
+          type="button"
+          id="js-close-menu"
+          class="slider-menu__icon-wrapper button-icon"
+          role="button"
+          aria-label="Close menu"
+        >
           <svg
             class="slider-menu__icon"
             viewBox="0 0 512.001 512.001"
@@ -38,7 +44,6 @@
               href="https://www.agoda.com/"
               target="_blank"
               class="slider-menu__list-link"
-              tabindex="7"
               >Find homes</a
             >
           </li>
@@ -47,7 +52,6 @@
               href="https://www.booking.com/"
               target="_blank"
               class="slider-menu__list-link"
-              tabindex="8"
               >Book a place</a
             >
           </li>
@@ -56,7 +60,6 @@
               href="https://www.hoteles.com/"
               target="_blank"
               class="slider-menu__list-link"
-              tabindex="9"
               >Stay in a hotel</a
             >
           </li>
@@ -65,7 +68,6 @@
               href="https://expedia.com/"
               target="_blank"
               class="slider-menu__list-link"
-              tabindex="10"
               >Find a flight</a
             >
           </li>
@@ -74,18 +76,24 @@
               href="https://www.kayak.com/"
               target="_blank"
               class="slider-menu__list-link"
-              tabindex="11"
               >Rent a car</a
             >
           </li>
         </ul>
       </nav>
-      <nav class="nav">
-        <button type="button" id="js-open-menu" class="nav__link-wrapper button-icon" tabindex="1">
+      <nav id="js-nav" class="nav">
+        <button
+          type="button"
+          id="js-open-menu"
+          class="nav__link-wrapper button-icon"
+          role="button"
+        >
           <svg
+            id="js-menu-icon"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
             class="nav__menu-icon"
+            aria-label="Open menu"
           >
             <path
               d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
@@ -94,26 +102,17 @@
         </button>
         <ul class="nav__list">
           <li>
-            <a
-              href="#link-travel"
-              class="nav__link nav__link--spacing"
-              tabindex="2"
+            <a href="#link-travel" class="nav__link nav__link--spacing"
               >Travel</a
             >
           </li>
           <li>
-            <a
-              href="#link-museum"
-              class="nav__link nav__link--spacing"
-              tabindex="3"
+            <a href="#link-museum" class="nav__link nav__link--spacing"
               >Museums</a
             >
           </li>
           <li>
-            <a
-              href="#link-contact"
-              class="nav__link nav__link--spacing"
-              tabindex="4"
+            <a href="#link-contact" class="nav__link nav__link--spacing"
               >Contact</a
             >
           </li>
@@ -132,7 +131,7 @@
               class="preloader__enter"
               type="button"
               aria-label="Start navigating inside the webpage"
-              tabindex="0"
+              role="button"
             >
               <span class="preloader__description">Press to Venture</span>
               <svg
@@ -203,6 +202,7 @@
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="0"
+                data-aos-once="true"
               >
                 <a
                   href="https://www.google.com/maps/place/Guanacaste+Province/@10.4691461,-85.9155352,9z/data=!3m1!4b1!4m5!3m4!1s0x8f757d2a8a1c08e5:0xe1081082012af945!8m2!3d10.6267399!4d-85.4436706"
@@ -212,7 +212,7 @@
                   <div class="card__img-wrapper">
                     <img
                       src="./img/cr-guanacaste.jpg"
-                      alt=""
+                      alt="Aerial view of the coast of Guanacaste"
                       class="card__img"
                     />
                   </div>
@@ -224,13 +224,18 @@
                 data-aos="zoom-in"
                 data-aos-duration="1300"
                 data-aos-delay="200"
+                data-aos-once="true"
               >
                 <a
                   href="https://www.google.com/maps/place/San+Jos%C3%A9+Province,+San+Jos%C3%A9/@9.9355438,-84.1483645,13z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e342c50d15c5:0xe6746a6a9f11b882!8m2!3d9.9280694!4d-84.0907246"
                   class="card__link"
                 >
                   <div class="card__img-wrapper">
-                    <img src="./img/cr-sanjose.jpg" alt="" class="card__img" />
+                    <img
+                      src="./img/cr-sanjose.jpg"
+                      alt="Good looking building in San José covered with vines"
+                      class="card__img"
+                    />
                   </div>
                   <span class="card__description">San José</span>
                 </a>
@@ -240,6 +245,7 @@
                 data-aos="zoom-in"
                 data-aos-duration="1600"
                 data-aos-delay="400"
+                data-aos-once="true"
               >
                 <a
                   href="https://www.google.com/maps/place/Puntarenas+Province,+Punta+Arenas/@9.9785506,-84.8309757,15z/data=!3m1!4b1!4m5!3m4!1s0x8fa02eb96dada6b7:0x3f48bd110f83d5ec!8m2!3d9.9778439!4d-84.8294211"
@@ -248,7 +254,7 @@
                   <div class="card__img-wrapper">
                     <img
                       src="./img/cr-puntarenas.jpg"
-                      alt=""
+                      alt="Aerial view of Puntarenas' famous lighthouse"
                       class="card__img"
                     />
                   </div>
@@ -260,13 +266,18 @@
                 data-aos="zoom-in"
                 data-aos-duration="1900"
                 data-aos-delay="600"
+                data-aos-once="true"
               >
                 <a
                   href="https://www.google.com/maps/place/Alajuela+Province,+Alajuela/@10.0274898,-84.2224415,14z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c871fbddb3:0xb1f90fbc26bf36cb!8m2!3d10.0159394!4d-84.2141701"
                   class="card__link"
                 >
                   <div class="card__img-wrapper">
-                    <img src="./img/cr-alajuela.jpg" alt="" class="card__img" />
+                    <img
+                      src="./img/cr-alajuela.jpg"
+                      alt="Ground view of a river in a dense forect in Alajuela"
+                      class="card__img"
+                    />
                   </div>
                   <span class="card__description">Alajuela</span>
                 </a>
@@ -274,7 +285,7 @@
             </ul>
           </div>
         </section>
-        <section class="view-wrapper view--white">
+        <section id="link-museum" class="view-wrapper view--white">
           <div class="section-title">
             <h2 class="section-title__title">Must-go Museums</h2>
           </div>
@@ -285,6 +296,7 @@
                 data-aos="fade-right"
                 data-aos-duration="800"
                 data-aos-delay="200"
+                data-aos-once="true"
               >
                 <img
                   src="./img/cr-national-museum.JPG"
@@ -298,6 +310,7 @@
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-delay="400"
+              data-aos-once="true"
             >
               <h3 class="museum__title">National Museum</h3>
               <p class="museum__description">
@@ -328,6 +341,7 @@
               data-aos="fade-right"
               data-aos-duration="800"
               data-aos-delay="400"
+              data-aos-once="true"
             >
               <h3 class="museum__title">Jade Museum</h3>
               <p class="museum__description">
@@ -362,6 +376,7 @@
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-delay="200"
+              data-aos-once="true"
             >
               <div class="museum__img-wrapper">
                 <img
@@ -377,10 +392,7 @@
           <div class="contact">
             <div class="contact__info">
               <span class="contact__title">Not sure <br />where to start?</span>
-              <a
-                class="contact__submit"
-                href="mailto:contact@costarica.com"
-              >
+              <a class="contact__submit" href="mailto:contact@costarica.com">
                 Let's begin
               </a>
             </div>
@@ -392,7 +404,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="js-footer" class="footer">
       <div class="footer__wrapper-info">
         <div class="footer__col">
           <span class="footer__list-title">Places</span>
@@ -429,7 +441,7 @@
           </ul>
         </div>
         <div class="footer__col">
-          <form action="" class="footer__form">
+          <form role="form" action="" class="footer__form" aria-label="Subscribe to receive information to your email">
             <div class="footer__form-group">
               <label class="footer__form-label" for="js-email">Email</label>
               <input
@@ -440,7 +452,7 @@
               />
             </div>
             <div class="footer__form-group">
-              <button class="footer__form-submit" type="submit">
+              <button class="footer__form-submit" type="submit" role="button">
                 Subscribe
               </button>
             </div>

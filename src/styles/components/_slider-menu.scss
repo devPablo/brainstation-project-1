@@ -38,7 +38,9 @@
     font-size: 1rem;
     transition: color 0.2s ease-in-out;
     outline: 2.5px solid transparent;
-    transition: outline 0.3s ease-in-out;
+    transition: outline 0.3s ease-in-out, left 0.15s ease-in-out;
+    position: relative;
+    left: 0;
 
     &:focus {
       outline: 2.5px solid $primary-focus;
@@ -46,6 +48,7 @@
 
     &:hover {
       color: #fff;
+      left: 10px;
     }
 
     @include media.query('>=xsm') {

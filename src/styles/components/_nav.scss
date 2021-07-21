@@ -8,6 +8,11 @@
   width: 100%;
   position: fixed;
   z-index: 400;
+  transition: background-color 0.3s ease-in-out;
+
+  &--active {
+    background-color: #fff;
+  }
 
   &__list {
     display: flex;
@@ -23,6 +28,10 @@
     &:focus {
       outline: 2.5px solid $primary-focus;
     }
+
+    &--active:focus {
+      outline: 2.5px solid $secondary-focus;
+    }
   }
 
   &__link {
@@ -36,8 +45,16 @@
     outline: 2.5px solid transparent;
     transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 
+    &--active {
+      color: #000;
+    }
+
     &:focus {
       outline: 2.5px solid $primary-focus;
+    }
+
+    &--active:focus {
+      outline: 2.5px solid $secondary-focus;
     }
 
     &:hover {
@@ -93,6 +110,10 @@
     cursor: pointer;
     outline: 2.5px solid transparent;
     transition: fill 0.3s ease-in-out;
+
+    &--active {
+      fill: #000;
+    }
 
     &:hover {
       fill: #fff;
