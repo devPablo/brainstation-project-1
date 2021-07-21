@@ -18,20 +18,18 @@
     <title>Costa Rica</title>
   </head>
   <body>
-    <header class="header">
+    <header id="js-header" class="header">
       <nav class="nav">
-        <div class="nav__link-wrapper">
-          <a href="" tabindex="1">
-            <svg
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-              class="nav__menu-icon"
-            >
-              <path
-                d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
-              ></path>
-            </svg>
-          </a>
+        <div class="nav__link-wrapper" tabindex="1">
+          <svg
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            class="nav__menu-icon"
+          >
+            <path
+              d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
+            ></path>
+          </svg>
         </div>
         <ul class="nav__list">
           <li>
@@ -44,10 +42,10 @@
           </li>
           <li>
             <a
-              href="#link-learn"
+              href="#link-contact"
               class="nav__link nav__link--spacing"
               tabindex="3"
-              >About</a
+              >Contact</a
             >
           </li>
         </ul>
@@ -128,17 +126,21 @@
         <section id="link-travel" class="view--white">
           <div class="list-wrapper">
             <ul class="card-list">
-              <div class="list-wrapper__title-wrapper">
-                <h2 class="list-wrapper__title">Travel anywhere</h2>
+              <div class="section-title">
+                <h2 class="section-title__title">Travel anywhere</h2>
               </div>
               <li
                 class="card"
-                tabindex="4"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="0"
               >
-                <a href="" class="card__link" tabindex="-1">
+                <a
+                  href="https://www.google.com/maps/place/Guanacaste+Province/@10.4691461,-85.9155352,9z/data=!3m1!4b1!4m5!3m4!1s0x8f757d2a8a1c08e5:0xe1081082012af945!8m2!3d10.6267399!4d-85.4436706"
+                  target="_blank"
+                  class="card__link"
+                  tabindex="4"
+                >
                   <div class="card__img-wrapper">
                     <img
                       src="./img/cr-guanacaste.jpg"
@@ -151,12 +153,15 @@
               </li>
               <li
                 class="card"
-                tabindex="5"
                 data-aos="zoom-in"
                 data-aos-duration="1300"
                 data-aos-delay="200"
               >
-                <a href="" class="card__link" tabindex="-1">
+                <a
+                  href="https://www.google.com/maps/place/San+Jos%C3%A9+Province,+San+Jos%C3%A9/@9.9355438,-84.1483645,13z/data=!3m1!4b1!4m5!3m4!1s0x8fa0e342c50d15c5:0xe6746a6a9f11b882!8m2!3d9.9280694!4d-84.0907246"
+                  class="card__link"
+                  tabindex="5"
+                >
                   <div class="card__img-wrapper">
                     <img src="./img/cr-sanjose.jpg" alt="" class="card__img" />
                   </div>
@@ -165,12 +170,15 @@
               </li>
               <li
                 class="card"
-                tabindex="6"
                 data-aos="zoom-in"
                 data-aos-duration="1600"
                 data-aos-delay="400"
               >
-                <a href="" class="card__link" tabindex="-1">
+                <a
+                  href="https://www.google.com/maps/place/Puntarenas+Province,+Punta+Arenas/@9.9785506,-84.8309757,15z/data=!3m1!4b1!4m5!3m4!1s0x8fa02eb96dada6b7:0x3f48bd110f83d5ec!8m2!3d9.9778439!4d-84.8294211"
+                  class="card__link"
+                  tabindex="6"
+                >
                   <div class="card__img-wrapper">
                     <img
                       src="./img/cr-puntarenas.jpg"
@@ -183,23 +191,125 @@
               </li>
               <li
                 class="card"
-                tabindex="7"
                 data-aos="zoom-in"
                 data-aos-duration="1900"
                 data-aos-delay="600"
               >
-                <a href="" class="card__link" tabindex="-1">
+                <a
+                  href="https://www.google.com/maps/place/Alajuela+Province,+Alajuela/@10.0274898,-84.2224415,14z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c871fbddb3:0xb1f90fbc26bf36cb!8m2!3d10.0159394!4d-84.2141701"
+                  class="card__link"
+                  tabindex="7"
+                >
                   <div class="card__img-wrapper">
-                    <img src="./img/cr-heredia.jpg" alt="" class="card__img" />
+                    <img src="./img/cr-alajuela.jpg" alt="" class="card__img" />
                   </div>
-                  <span class="card__description">Heredia</span>
+                  <span class="card__description">Alajuela</span>
                 </a>
               </li>
             </ul>
           </div>
         </section>
-        <section class="view--black">
-          <h2>Something</h2>
+        <section class="view-wrapper view--white">
+          <div class="section-title">
+            <h2 class="section-title__title">Must-go Museums</h2>
+          </div>
+          <article class="museum">
+            <div class="museum__content-wrapper">
+              <div
+                class="museum__img-wrapper"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="200"
+              >
+                <img
+                  src="./img/cr-national-museum.JPG"
+                  alt="Photo of the front part of the National Museum in San José"
+                  class="museum__img"
+                />
+              </div>
+            </div>
+            <div
+              class="museum__content-wrapper"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              <h3 class="museum__title">National Museum</h3>
+              <p class="museum__description">
+                It is the oldest museum in the country, located in the historic
+                Cuartel Bellavista building, where, in 1948, former President
+                Figueres abolished the army. It features an important archeology
+                exhibit, with unique pieces such as the stone spheres of
+                Diquís.<br />
+                It also has one of the most important historical collections on
+                display, which articulately recounts the history of Costa Rica
+                from the time of contact and conquest up until present day. The
+                birth of the National Museum, at the end of the 19th century,
+                was framed within the liberal project of "order and progress"
+                that implied the reorganization of the national culture through
+                reforms in the educational field and the creation of
+                institutions for cultural and scientific purposes. , like the
+                National Museum. <br />
+                This is how on May 4, 1887, under the presidency of Bernardo
+                Soto, the National Museum was created with the purpose of
+                providing the country with a public establishment to deposit,
+                classify and study natural and artistic products.
+              </p>
+            </div>
+          </article>
+          <article class="museum">
+            <div
+              class="museum__content-wrapper"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              <h3 class="museum__title">Jade Museum</h3>
+              <p class="museum__description">
+                It is seen as a novel, avant-garde cultural offering in the
+                realm of Central American archaeological heritage protection and
+                conservation. Located in downtown San José in a modern building,
+                which has an architectural component that visually communicates
+                the concept of a block of jade divided in half, it holds a
+                collection of around 7,000 objects from the pre-Columbian era,
+                including those made of jade, ceramic, and stone, among others,
+                and has a collection of art and ethnography. <br />
+                The Museum of Jade and Pre-Columbian Culture, simply called the
+                Jade Museum, is a historical, cultural and archaeological museum
+                located in San José, Costa Rica, belonging to the National
+                Insurance Institute (INS). It houses an archaeological
+                collection made up of a wide range of ceramic, bone, wood, shell
+                and stone artifacts such as statuary, metates, grinding hands
+                and others, however, its main attraction is the enormous amount
+                of archaeological pieces made with known semi-precious stones.
+                as a whole as jade, a collection considered the largest in the
+                world with respect to this precious stone. <br />
+                Until 2014, its headquarters were located on the ground floor of
+                the INS headquarters, on avenida 7, streets 9 and 11, then it
+                was occupied by a modern five-story building, located west of
+                the Plaza de la Democracia, built for the specific purpose of
+                housing it. Today the Jade Museum is considered an important
+                promoter of Costa Rican culture.
+              </p>
+            </div>
+            <div
+              class="museum__content-wrapper"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div class="museum__img-wrapper">
+                <img
+                  src="./img/cr-jade-museum.jpg"
+                  alt="Sideview of the Jade Museum in San José"
+                  class="museum__img"
+                />
+              </div>
+            </div>
+          </article>
+        </section>
+        <section id="link-contact" class="view-wrapper view--gray">
+          <h2>Contact</h2>
         </section>
       </div>
     </main>

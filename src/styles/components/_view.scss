@@ -1,3 +1,24 @@
+@use './../abstracts/breakpoints' as media;
+
+.view-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+
+  @include media.query('>=sm') {
+    padding: 0 4rem;
+  }
+
+  @include media.query('>=md') {
+    padding: 0 6rem;
+  }
+
+  @include media.query('>=lg') {
+    padding: 0 6rem;
+  }
+}
+
 .view {
   height: 100vh;
   display: flex;

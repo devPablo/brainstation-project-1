@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', e => {
     if (counter >= introTitles.length) counter = 0;
     jsIntroTitle.textContent = introTitles[counter];
     counter++;
-  }, 1000);
+  }, 2000);
 });

@@ -1,0 +1,18 @@
+@use './../abstracts/breakpoints' as media;
+
+.section-title {
+  width: 100%;
+
+  &__title {
+    border: 2.5px solid transparent;
+    margin-top: 3rem;
+    color: #222;
+    font-size: 1.6rem;
+    text-align: left;
+
+    @include media.query('>=sm') {
+      font-size: 2rem;
+    }
+
+  }
+}
